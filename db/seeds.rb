@@ -15,5 +15,5 @@ Restaurant.create(name: "맘스터치", pocket:"보통", lat: 35.963268, lng: 12
 Restaurant.create(name: "마루", pocket:"보통", lat: 35.963720, lng: 126.957549)
 Restaurant.create(name: "탐라궁", pocket:"보통", lat: 35.9630703, lng: 126.956338)
 Restaurant.create(name: "스시집(캘리마끼)", pocket:"부자", lat: 35.9603873, lng: 126.9589441)
-Restaurant.create(name: "미스터피자", pocket:"부자", lat: 35.9603873, lng: 126.9589441)
-Restaurant.create(name: "빕스", pocket:"부자", lat: 35.9592469, lng:126.971386)
+Restaurant.create(name: "미스터피자", pocket:"부자", lat: 35.9579817, lng: 126.9707136)
+Restaurant.create(name: "빕스", pocket:"부자", lat: 35.958166, lng: 126.9707136)

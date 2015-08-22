@@ -4,8 +4,8 @@ class CreateRestaurants < ActiveRecord::Migration
 
       t.string :name
       t.string :pocket
-      t.integer :lat
-      t.integer :lng
+      t.float :lat
+      t.float :lng
 
       t.timestamps null: false
     end

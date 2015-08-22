@@ -1,41 +1,30 @@
 <center>
   <img src="/img/학교앞 추천메뉴.jpg" style="width: 360px;"><br>
 
+  <div id="map"></div>
+  <script type="text/javascript">
 
-<style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #map {
-    height: 100%;
-  }
-</style>
+  var map;
+    function initMap() {
 
-<div id="map"></div>
-<script>
+  var myLatLng = {lat: @menu.lat, lng: @menu.lng};
 
-function initMap() {
-var myLatLng = {lat: @menu.lat, lng: @menu.lng};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
 
-var map = new google.maps.Map(document.getElementById('map'), {
-zoom: 4,
-center: myLatLng
-});
+  var marker = new google.maps.Marker({
+  position: myLatLng,
+  map: map,
+  title: 'Hello World!'
+  });
 
-var marker = new google.maps.Marker({
-position: myLatLng,
-map: map,
-title: 'Hello World!'
-});
-}
-
-</script>
-<script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIghUjf1-ZLpX25QQDwof9LhdzY0f6KU&callback=initMap">
     </script>
+    <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzIghUjf1-ZLpX25QQDwof9LhdzY0f6KU&callback=initMap">
+    </script><br>
 
 
-  <%= @menu.name %>
+  <%= @menu.name %><br>
 </center>

@@ -1,0 +1,23 @@
+// Place all the styles related to the js controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main_logo {
+  max-width:100%;
+}
+
+.sub_logo {
+  max-width:100%;
+}
+
+#map-canvas {
+  height: 50%;
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+
+.row {
+  text-align: center;
+  margin: auto;
+  color: #7777ff;
+}
